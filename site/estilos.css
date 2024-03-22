@@ -1,0 +1,169 @@
+body{
+    background-color: #0f0f0f;
+    margin: 0;
+    font-family: Madimi One;
+    padding-top: 80px;       
+               /*margem do top ate o corpo do site*/
+}
+header{
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    padding: 10px;
+    box-sizing: border-box;
+    display: inline-block;
+    position: fixed;                        /* serve para fixar o header no top ao usar scrol ele não some*/
+    top: 0;                                 /* serve para que o header fique colado no inicio da pagina*/
+}
+
+header img {             /*logo dento do site com link home*/
+    width: 10%;
+    margin-top: 20px;
+}
+
+
+header nav {
+    float: right;
+    margin: 5px;
+    text-decoration: none;
+    font-size: 20PX;
+    
+   }
+header nav ul{
+    list-style: none; /*serve para tirar as bolinhas da frente da marcação*/
+
+}
+header nav ul li {
+    display: inline-block; /*serve para deixar as marcações um do lado da outra*/
+    margin: 5px;          /*serve para deixar espaço entre as listagens*/
+   }
+
+header nav ul li a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    transition: all 0.5s; 
+    margin-right: 50px; /* serve para deixar um tempo entre a trancição da cor original para quando passar o mouse em cima*/
+    
+}
+header nav ul li a:hover {
+    color:rgba(237, 253, 3, 0.986);
+text-decoration:underline;
+margin-top: 30px;}      /*serve mudar cor ao pasar mouse por cima*/
+    
+    
+
+.coluna-2 img {
+width: 100%;
+}
+
+.grid-2{ 
+    
+    display:grid;
+    grid-template-columns: 70% 30%;               /* essa formatação é igual a terceira a diferença é que aqui via ter duas colunas, colocamos o tamanho que cada um devera ter ex: 70 e 30%*/
+    }
+    
+    
+
+
+    
+        
+    
+
+    
+    
+
+
+
+    .grid {
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+padding: 50px;}
+
+    .grid .coluna img {
+        width: 100%;
+    }
+    .grid .coluna {
+        text-align: center;
+        border: 1px solid #000000;      
+        border-radius: 5px;                
+        margin: 2px;                     
+    }
+
+h3{text-align: center;
+font-size: 50px;
+color: white;}
+
+.colunasportifolio {
+    text-align: center;
+  
+}
+
+.textr{ text-align: center;
+    color: white;}
+
+
+.h6 {text-align: center;}
+    footer p{
+        font-size: 20px;
+    text-align: center;
+padding-right: 50px;}
+   
+    footer{background-color: rgb(0, 0, 0);
+              }  
+
+        footer p  {color: white;}
+        
+        .flap1{text-align: center;}
+       .formulario{text-align: right;
+    padding-right: 100px;
+color: white;}
+        
+        
+        
+
+
+      
+     
+        
+        
+        button{
+            background-color: greenyellow;
+        }
+
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+        @media(max-width: 420px){           /*@media serve para formatar o site para celulares*/
+            .banner{                        /*aqui foi selecionado a classe banner*/
+                display: none;              /*/display none serve aqui no ex para que o baner não apareça em telas menores que 420px*/
+            }
+            main {                          /*aqui o @media formatará todo o main para celulares*/
+            width: 100%;                    /*serve para que use 100% da tela do celular*/
+            }
+            .grid{                          /* foi selecionado a formatação da grid onde no site estão os carro*/
+                grid-template-columns: 100%;/* foi definidor para que cara imagem ocupe 100% e fique um de baixo do outro*/
+            }
+            header nav ul {                 /*foi selecionado o painel do menu nav*/
+                display: block;             /*foi definido para que os menus de navegação fique um de baixo do outro*/
+                margin: 0;
+                padding: 0;
+            }
+            header nav ul li {
+                width: 100%;
+            }
+            header nav{
+                display: none;
+            }
+            header img {
+                width: 300px;               /*aqui está definido o tamanho que fica o logo do header*/
+            }
+        }      
