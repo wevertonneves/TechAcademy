@@ -6,60 +6,79 @@
     <title>flapBuners</title>
     <link rel="shortcut icon" href="imagens/incone site.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    
     <link rel='stylesheet' type='text/css' href='estilos.css'>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Madimi+One&display=swap" rel="stylesheet">
-</head>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css">
+ </head>
 
-<body>
+
  <header>
-        <a href="index.html" alt="home">
-        <img src="imagens/logo header.png"></a>
+ <a href="index.html" alt="home">
+ <img src="imagens/logo header.png"></a>
 <nav><ul>
 <li> <a href="index.html" title="home"> Home</a> </li>
-<li><a href="estoque.html" title="Imagens"> Imagens</a></li>
-<li><a href="contato" title="Sobre"> Sobre</a></li>
-<li><a href="contato" title="Contato"> Contato</a></li>
-<li> <a href="https://gamby2024.itch.io/teste1" style="color:rgb(224, 203, 8);">Jogar</a></li> 
+<li><a href="#titulo01" title="Imagens"> Imagens</a></li>
+<li><a href="#titulo02" title="Sobre"> Sobre</a></li>
+<li><a href="mailto:wevertonneves2010@hotmail.com" title="Contato"> Contato</a></li>
+<li> <a href="http://flapburnes.x10.mx" style="color:rgb(224, 203, 8);">Jogar</a></li> 
 </ul> </nav>
-    </header> 
-    <div class="grid-2">
-        <section >
+</header> 
+    
+
+<div class="video-foto">
+        <section class="video">
            <video autoplay autostart controls muted loop width="100%" height="580">
             <source src="imagens/video teste.mp4" type="video/mp4" alt="video teste" title="video teste"> 
            </video>
-                   </section>		
-                  
-            
-            
-           
-        <aside class="coluna-2" >
-           <img src="imagens/asid.jpg" width="100%" height="580">
+        </section>		
+           <aside class="coluna-2" >
+           <img src="imagens/asid.png" width="100%" height="580">
             </aside>
           </div>
-   
-    
-    
-    <section id="galeria de imagens" class="colunasportifolio">
-        <h3> Galeria de Imagens</h3>
-        <div class="grid">
-            <div class="coluna">
-            <img src="imagens/01.png" alt="imagem 1"></div>
+   <br><br><br><br><br>
         
-            <div class="coluna">
-            <img src="imagens/01.png" alt="imagem 2"></div>
+<body >
+  
+<H2 id="titulo01">GALERIA DE IMAGENS</H2>
+    <br><br>
+    <div class="swiper" >
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="project-img">
+              <img src="imagens/floresta.png" alt="Foto 01" class="slider">
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="project-img">
+              <img src="imagens/deserto.png" alt="Foto 02" class="slider">
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="project-img">
+              <img src="imagens/cemiterio.png" alt="Foto 03" class="slider">
+            </div>
+          </div>
+        </div>
         
-            <div class="coluna">
-            <img src="imagens/01.png" alt="imagem 3"></div>
+     <div class="swiper-button-next"></div>
+     <div class="swiper-button-prev"></div>
+     <div class="swiper-pagination"></div>
+     </div>
 
-            <div class="coluna">
-            <img src="imagens/01.png" alt="imagem 4"></div>
-            </section>
 
-</div>
-<div class="textr">
-        <h2> SOBRE</h2>
+  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+  <script src="script.js"></script>
+
+</body>
+
+
+<footer>
+
+
+    <div class="textr">
+        <h3 id="titulo02"> SOBRE</h3>
          <P>FlappyBurnes um jogo de plataforma,com objetivo de maximo score. <br>
         O Protagonista é o nosso querido professor Burnes.<br>
         Burnes é um passaro, cuja sua comida favorita é o tão saboro bacon<Br>
@@ -68,32 +87,22 @@
                       FlapBurnes e um Jogo Divertido e o mais importante com muito bacon
      
         </P></div>
-</body>
-
-
-
-<footer>
-    <p class="flap1"> FlappBurnes - todos os direito reservados <p>
+        <br><br><br>
+       
+<p> FlappBurnes - todos os direitos reservados <p>
     <p div class="contato">
-        <a href="https://facebook.com" title="facebook">
-            <img src="imagens/incone facebook.jpg " width="32x32">
+        <a href="https://www.facebook.com/weverton.thiago.165" title="facebook" class="buttonawe">
+            <i class="fa-brands fa-facebook"></i> 
         </a>
-        <a href="https://instagram.com" title="Instagram">
-            <img src="imagens/incone instagram.jpg" width="32x32">
+        <a href="https://www.instagram.com/weverton.thiago.165/" title="Instagram" class="buttonawe">
+            <i class="fa-brands fa-instagram"></i>
         </a>
-        <a href="https://twitter.com" title="twitter" >
-            <img src="imagens/incone twiter.jpg" width="32x32">
+        <a href="https://x.com/WevertonThiag16?t=yzN8XMKJSxEzH0oQxKaWYQ&s=09" title="twitter" class="buttonawe">
+            <i class="fa-brands fa-x-twitter"></i>
 </a>
 </div>
-    </p>
-
-    <h4 class="formulario">Suporte<h4>
-<Form name ="campo de mensagem" method="get" class="formulario"> 
-    <Label>Digite aqui seu Email:</Label>
-    <input type="email">
-    <label for="Mensagem"> </label><br>
-    <textarea placeholder="Digite Aqui Alguma Mensagem" rows="5"></textarea>    <br>
-    <button type="submit">Enviar mensagem</button>
-</Form>
+<br>
+<br>
+<br>
 </footer>
 </html>
